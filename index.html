@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Invaders</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-wrapper">
+    <header class="hud">
+      <div class="hud-item">SCORE <span id="score">0</span></div>
+      <div class="hud-item">LIVES <span id="lives">3</span></div>
+      <div class="hud-item">WAVE  <span id="wave">1</span></div>
+    </header>
+
+    <canvas id="game" width="720" height="540" aria-label="Space Invaders game canvas"></canvas>
+
+    <div id="overlay" class="overlay">
+      <h1 id="overlay-title">SPACE INVADERS</h1>
+      <p id="overlay-sub">← →  move &nbsp;·&nbsp; SPACE  fire &nbsp;·&nbsp; P  pause</p>
+      <button id="start-btn" type="button">START</button>
+    </div>
+
+    <footer class="footer">vanilla HTML · CSS · JS</footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
