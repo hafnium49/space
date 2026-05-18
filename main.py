@@ -11,7 +11,7 @@ Make a vanilla HTML + JS + CSS website for a game of Space Invaders. Write the c
 TOOLS = ["Read", "Write", "Edit", "Bash", "Glob", "Grep", "AskUserQuestion"]
 
 async def main():
-    options = ClaudeAgentOptions(allowed_tools=TOOLS, model="claude-opus-4-6")
+    options = ClaudeAgentOptions(allowed_tools=TOOLS, model="claude-opus-4-7")
     async for message in query(prompt=PROMPT, options=options):
         print(message)
 
